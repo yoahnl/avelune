@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yoahnl.github.io/avelune/sitemap.xml
