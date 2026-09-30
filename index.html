@@ -3,35 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#08070c">
-    <meta name="description" content="Avelune est la console qui accueille vos aventures et leur donne une place dans votre collection.">
+    <meta name="theme-color" content="#090b1b">
+    <meta name="description" content="Vos aventures, réunies dans Avelune. Importez vos jeux, explorez leurs univers et retrouvez votre progression sur iPhone et iPad.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="Avelune">
-    <meta property="og:title" content="Avelune — Une console pour des mondes à emporter">
-    <meta property="og:description" content="Avelune est la console qui accueille vos aventures et leur donne une place dans votre collection.">
+    <meta property="og:title" content="Avelune — Des mondes à emporter">
+    <meta property="og:description" content="Une bibliothèque pour vos jeux. Une porte ouverte sur leurs univers. Découvrez Avelune sur iPhone et iPad.">
     <meta property="og:url" content="https://yoahnl.github.io/avelune/">
-    <meta property="og:image" content="https://yoahnl.github.io/avelune/assets/og.png">
-    <meta property="og:image:width" content="1731">
-    <meta property="og:image:height" content="909">
-    <meta property="og:image:alt" content="Avelune, une console pour des mondes à emporter">
+    <meta property="og:image" content="https://yoahnl.github.io/avelune/assets/brand/avelune-moon.png">
+    <meta property="og:image:width" content="1254">
+    <meta property="og:image:height" content="1254">
+    <meta property="og:image:alt" content="La lune irisée et les étoiles d’Avelune">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Avelune — Une console pour des mondes à emporter">
-    <meta name="twitter:description" content="Avelune est la console qui accueille vos aventures et leur donne une place dans votre collection.">
-    <meta name="twitter:image" content="https://yoahnl.github.io/avelune/assets/og.png">
+    <meta name="twitter:title" content="Avelune — Des mondes à emporter">
+    <meta name="twitter:description" content="Vos jeux, vos histoires, votre bibliothèque. Sur iPhone et iPad.">
+    <meta name="twitter:image" content="https://yoahnl.github.io/avelune/assets/brand/avelune-moon.png">
     <link rel="canonical" href="https://yoahnl.github.io/avelune/">
-    <link rel="icon" href="assets/avelune-mark.webp">
-    <link rel="apple-touch-icon" href="assets/avelune-mark.webp">
+    <link rel="icon" type="image/png" href="assets/brand/avelune-moon.png">
+    <link rel="apple-touch-icon" href="assets/brand/avelune-moon.png">
+    <link rel="preload" href="assets/fonts/cormorant-garamond-variable.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="assets/site.css">
-    <title>Avelune — Une console pour des mondes à emporter</title>
+    <title>Avelune — Des mondes à emporter</title>
   </head>
   <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
     <div class="site-shell">
-      <a class="skip-link" href="#contenu">Aller au contenu</a>
       <header class="site-header">
         <a class="brand" href="./" aria-label="Avelune — Accueil">
-          <img src="assets/avelune-mark.webp" alt="" width="38" height="38">
-          <span>AVELUNE</span>
+          <span class="brand-symbol"><img src="assets/brand/avelune-moon.png" alt="" width="1254" height="1254"></span>
+          <img class="brand-wordmark" src="assets/brand/avelune-wordmark.png" alt="" width="2172" height="724">
         </a>
         <nav class="site-nav" aria-label="Navigation principale">
           <a href="support/">Assistance</a>
@@ -39,94 +40,100 @@
         </nav>
       </header>
 
-      <main id="contenu">
-        <section class="hero section-wrap">
+      <main id="contenu" tabindex="-1">
+        <section class="hero section-wrap" aria-labelledby="hero-title">
           <div class="hero-copy">
-            <p class="eyebrow">La console de vos aventures</p>
-            <h1>Des mondes à emporter.</h1>
-            <p class="hero-lead">Avelune transforme chaque aventure en cartouche, puis lui donne une place dans une bibliothèque pensée comme une vraie collection.</p>
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Votre bibliothèque d’aventures</p>
+            <h1 id="hero-title">Des mondes<br>à <em>emporter.</em></h1>
+            <p class="hero-lead">Une histoire commence par une envie d’ailleurs. Avec Avelune, réunissez vos jeux, explorez leurs univers et reprenez votre aventure là où vous l’avez laissée.</p>
             <div class="hero-actions">
-              <span class="store-pill" aria-label="Bientôt sur l’App Store">
-                <span>Bientôt sur</span>
-                <strong>l’App Store</strong>
-              </span>
-              <a class="text-link" href="support/">Découvrir Avelune <span aria-hidden="true">→</span></a>
+              <a class="primary-link" href="#decouvrir">Découvrir Avelune <span aria-hidden="true">↗</span></a>
+              <span class="availability">Pour iPhone et iPad<br><span>Bientôt sur l’App Store</span></span>
             </div>
-            <ul class="trust-list" aria-label="Caractéristiques principales">
-              <li>Aucun compte</li>
-              <li>Aucune publicité</li>
-              <li>Aucun suivi</li>
-            </ul>
           </div>
-
-          <div class="hero-visual" aria-label="Aperçu de l’application Avelune">
-            <div class="moon-glow"></div>
-            <div class="phone-frame">
-              <img src="assets/avelune-app.png" alt="La bibliothèque de jeux et la console virtuelle dans Avelune" width="393" height="852">
-            </div>
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="moon-halo"></div>
+            <div class="moon-orbit"></div>
+            <img class="hero-moon" src="assets/brand/avelune-moon.png" alt="" width="1254" height="1254" fetchpriority="high">
+            <span class="visual-caption">Un peu de lune.<br>Tout un monde.</span>
           </div>
         </section>
 
-        <section class="manifesto section-wrap">
-          <p class="eyebrow">Une autre façon de lancer un jeu</p>
-          <h2>Votre bibliothèque ressemble enfin à une collection.</h2>
-          <p>Pas de grille impersonnelle ni de jaquettes perdues dans un dossier. Chaque aventure possède sa cartouche, son ambiance et sa place dans votre pièce Avelune.</p>
+        <div class="reassurance section-wrap">
+          <p>Le plaisir de jouer. Tout simplement.</p>
+          <ul aria-label="Caractéristiques principales">
+            <li><span aria-hidden="true">✦</span> Aucun compte</li>
+            <li><span aria-hidden="true">✦</span> Aucune publicité</li>
+            <li><span aria-hidden="true">✦</span> Aucun suivi</li>
+          </ul>
+        </div>
+
+        <section class="intro section-wrap" id="decouvrir" aria-labelledby="intro-title">
+          <div class="section-heading">
+            <p class="eyebrow">Une place pour chaque univers</p>
+            <h2 id="intro-title">Vos jeux.<br>Vos histoires.<br><em>Votre Avelune.</em></h2>
+          </div>
+          <div class="intro-copy">
+            <p class="large-copy">Une bibliothèque pour les aventures que vous aimez. Et celles que vous n’avez pas encore découvertes.</p>
+            <p>Avelune accueille les jeux créés pour elle. Importez une aventure depuis vos fichiers, retrouvez sa présentation dans votre collection, puis lancez-vous. Chaque univers garde son identité ; vous gardez le fil de votre histoire.</p>
+            <a class="text-link" href="support/">Comment installer mon premier jeu <span aria-hidden="true">→</span></a>
+          </div>
+        </section>
+
+        <section class="features section-wrap" aria-label="L’expérience Avelune">
+          <article class="feature">
+            <span class="feature-number">01 / Collection</span>
+            <svg class="feature-icon" width="30" height="30" aria-hidden="true"><use href="assets/ui-icons.svg#library"></use></svg>
+            <h3>Un coin à vous.</h3>
+            <p>Des illustrations, des descriptions et vos jeux réunis au même endroit. Choisissez votre prochaine aventure en un regard.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-number">02 / Exploration</span>
+            <svg class="feature-icon" width="30" height="30" aria-hidden="true"><use href="assets/ui-icons.svg#play"></use></svg>
+            <h3>Un autre ailleurs.</h3>
+            <p>Des mondes en 2D, des personnages à rencontrer, des histoires à découvrir. Touchez votre jeu et laissez la balade commencer.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-number">03 / Progression</span>
+            <svg class="feature-icon" width="30" height="30" aria-hidden="true"><use href="assets/ui-icons.svg#bookmark"></use></svg>
+            <h3>À votre rythme.</h3>
+            <p>Une pause, puis la suite. Sauvegardez votre partie et retrouvez votre progression directement sur votre appareil.</p>
+          </article>
         </section>
 
         <section class="steps section-wrap" aria-labelledby="steps-title">
           <div class="section-heading">
-            <p class="eyebrow">Simple par nature</p>
-            <h2 id="steps-title">Trois gestes, et l’histoire commence.</h2>
+            <p class="eyebrow">À vous de jouer</p>
+            <h2 id="steps-title">Trois petits gestes.<br><em>Une grande échappée.</em></h2>
           </div>
-          <ol class="step-grid">
-            <li>
-              <span>01</span>
-              <h3>Choisissez</h3>
-              <p>Importez une aventure Avelune depuis l’app Fichiers.</p>
-            </li>
-            <li>
-              <span>02</span>
-              <h3>Insérez</h3>
-              <p>Déposez sa cartouche dans la console virtuelle.</p>
-            </li>
-            <li>
-              <span>03</span>
-              <h3>Jouez</h3>
-              <p>Retrouvez votre progression localement, sans créer de compte.</p>
-            </li>
+          <ol class="step-list">
+            <li><span>01</span><div><h3>Une aventure vous attend.</h3><p>Récupérez le fichier d’un jeu compatible avec Avelune et enregistrez-le dans Fichiers.</p></div></li>
+            <li><span>02</span><div><h3>Faites-lui une place.</h3><p>Dans la bibliothèque, touchez le bouton + et sélectionnez votre fichier. Avelune installe le jeu.</p></div></li>
+            <li><span>03</span><div><h3>Ouvrez un nouveau monde.</h3><p>Choisissez votre aventure, lancez une partie et explorez. Vos sauvegardes vous permettront de revenir.</p></div></li>
           </ol>
         </section>
 
-        <section class="privacy-promise section-wrap">
-          <div class="promise-mark" aria-hidden="true"><span>✦</span></div>
+        <section class="privacy-promise section-wrap" aria-labelledby="privacy-title">
+          <svg class="promise-icon" width="44" height="44" aria-hidden="true"><use href="assets/ui-icons.svg#shield"></use></svg>
           <div>
             <p class="eyebrow">Votre aventure reste la vôtre</p>
-            <h2>Tout reste sur votre appareil.</h2>
-            <p>Avelune n’utilise ni compte, ni publicité, ni outil d’analyse. Vos jeux, préférences et sauvegardes sont conservés localement.</p>
+            <h2 id="privacy-title">Des souvenirs.<br><em>Pas des données à vendre.</em></h2>
+            <p>Sans compte, sans publicité, sans outil de suivi. Vos jeux, vos préférences et vos sauvegardes restent sur votre appareil.</p>
+            <a class="text-link" href="privacy/">Notre politique de confidentialité <span aria-hidden="true">→</span></a>
           </div>
-          <a class="outline-link" href="privacy/">Lire notre politique de confidentialité</a>
         </section>
 
-        <section class="closing section-wrap">
-          <img src="assets/avelune-mark.webp" alt="" width="80" height="80">
-          <p class="eyebrow">Avelune</p>
-          <h2>La prochaine histoire est déjà quelque part.</h2>
-          <p>Il ne reste plus qu’à l’insérer.</p>
+        <section class="closing section-wrap" aria-labelledby="closing-title">
+          <img src="assets/brand/avelune-moon.png" alt="" width="1254" height="1254" loading="lazy">
+          <p class="eyebrow">Gardez une place pour l’inattendu</p>
+          <h2 id="closing-title">La prochaine histoire<br><em>vous attend quelque part.</em></h2>
+          <a class="outline-link" href="support/">Besoin d’un petit coup de lune ? <span aria-hidden="true">→</span></a>
         </section>
       </main>
 
-      <footer class="site-footer">
-        <div>
-          <span class="footer-brand">AVELUNE</span>
-          <p>Des mondes à emporter, des histoires à garder.</p>
-        </div>
-        <nav aria-label="Navigation de pied de page">
-          <a href="support/">Assistance</a>
-          <a href="privacy/">Confidentialité</a>
-          <a href="mailto:yoahn.l@me.com">yoahn.l@me.com</a>
-        </nav>
+      <footer class="site-footer section-wrap">
+        <div><a class="footer-brand" href="./" aria-label="Avelune — Accueil"><img src="assets/brand/avelune-wordmark.png" alt="Avelune" width="2172" height="724" loading="lazy"></a><p>Des mondes à emporter, des histoires à garder.</p></div>
+        <nav aria-label="Navigation de pied de page"><a href="support/">Assistance</a><a href="privacy/">Confidentialité</a><a href="mailto:yoahn.l@me.com">Nous écrire <span aria-hidden="true">↗</span></a></nav>
         <p class="copyright">© 2026 Avelune</p>
       </footer>
     </div>
